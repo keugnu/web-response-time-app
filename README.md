@@ -1,5 +1,5 @@
 # Web Response Time App
-This applicaiton's purpose is to run simultaneous user experience tests on many websites to measure
+This application's purpose is to run simultaneous user experience tests on many websites to measure
 the time it takes to load pages and/or functions of the websites defined in the configuration.
 
 ## Requirements
@@ -11,3 +11,5 @@ I have only used this application on Windows. I am sure that it can be changed s
 compatible with *nix and MacOS. I do not know for sure.
 
 There are a few hard coded directories that can easily be changed.
+
+The configuration update does not work very well.
