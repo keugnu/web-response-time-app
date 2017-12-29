@@ -1,0 +1,13 @@
+# ignore processing files
+*.txt
+!requirements.txt  #  do not ignore requirements
+__pycache__
+webtesterconf.yaml
+test.py
+*.log*
+*.conf
+*.bat
+*.ini
+*.pyc
+*.json
+*.csv

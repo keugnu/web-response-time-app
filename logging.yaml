@@ -1,0 +1,32 @@
+version: 1
+formatters:
+  default: 
+    format: '%(asctime)s %(levelname)s : %(name)s : %(module)s | %(message)s'
+  brief:
+    format: '%(module)s | %(message)s'
+handlers:
+  top:
+    class: logging.handlers.RotatingFileHandler
+    formatter: default
+    level: DEBUG
+    filename: logs\\seleniumscheduler.log
+    maxBytes: 10485760
+    backupCount: 3
+  listener:
+    class: logging.handlers.RotatingFileHandler
+    formatter: default
+    level: DEBUG
+    filename: logs\\listener.log
+    maxBytes: 10485760
+    backupCount: 3
+  console:
+    class: logging.StreamHandler
+    formatter: brief
+    level: WARNING
+loggers:
+  top:
+    level: DEBUG
+    handlers: [top, console]
+  listener:
+    level: DEBUG
+    handlers: [listener]

@@ -1,0 +1,10 @@
+site1: 
+  interval: 300
+  browser: chrome
+  username:
+  password:
+site2:
+  interval: 300
+  browser: chrome
+  username:
+  password:
